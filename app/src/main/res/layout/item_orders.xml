@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_table_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/table_1"
+                android:textColor="@color/txt_black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_number_of_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/_4_items"
+                android:textColor="@color/txt_grey"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/txt_table_number"
+                app:layout_constraintTop_toBottomOf="@id/txt_table_number" />
+
+            <ImageView
+                android:id="@+id/img_grey_dot"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginStart="5dp"
+                android:contentDescription="@string/img_grey_dot"
+                android:src="@drawable/img_grey_dot"
+                app:layout_constraintBottom_toBottomOf="@id/txt_number_of_items"
+                app:layout_constraintStart_toEndOf="@id/txt_number_of_items"
+                app:layout_constraintTop_toTopOf="@id/txt_number_of_items" />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/_12_00_pm"
+                android:textColor="@color/txt_grey"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_number_of_items"
+                app:layout_constraintStart_toEndOf="@id/img_grey_dot" />
+
+            <TextView
+                android:id="@+id/txt_total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/total"
+                android:textColor="@color/dialog_txt"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/txt_table_number"
+                app:layout_constraintTop_toBottomOf="@id/txt_number_of_items" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text="@string/rohan_singh"
+                android:textColor="@color/txt_grey"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_table_number"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/_91_0987654321"
+                android:textColor="@color/txt_grey"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@id/txt_name"
+                app:layout_constraintTop_toBottomOf="@id/txt_table_number" />
+
+            <TextView
+                android:id="@+id/txt_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_accept"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingTop="2.5dp"
+                android:paddingEnd="35dp"
+                android:paddingBottom="2.5dp"
+                android:text="@string/accept"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/txt_name"
+                app:layout_constraintTop_toBottomOf="@id/txt_phone_number" />
+
+            <ImageView
+                android:id="@+id/img_accept"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/img_accept"
+                android:src="@drawable/img_accept"
+                app:layout_constraintBottom_toBottomOf="@id/txt_accept"
+                app:layout_constraintEnd_toEndOf="@id/txt_accept"
+                app:layout_constraintTop_toTopOf="@id/txt_accept" />
+
+            <TextView
+                android:id="@+id/txt_reject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_reject"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingTop="2.5dp"
+                android:paddingEnd="35dp"
+                android:paddingBottom="2.5dp"
+                android:text="@string/reject"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/txt_accept"
+                app:layout_constraintTop_toBottomOf="@id/txt_phone_number" />
+
+            <ImageView
+                android:id="@+id/img_reject"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/img_reject"
+                android:src="@drawable/img_reject"
+                app:layout_constraintBottom_toBottomOf="@id/txt_reject"
+                app:layout_constraintEnd_toEndOf="@id/txt_reject"
+                app:layout_constraintTop_toTopOf="@id/txt_reject" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/view_line_color_2"
+                app:layout_constraintTop_toBottomOf="@id/txt_reject" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

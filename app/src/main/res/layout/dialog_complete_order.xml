@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="40dp">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_card_bg"
+        android:elevation="5dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.85">
+
+        <TextView
+            android:id="@+id/txtDialogHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/are_you_sure"
+            android:textColor="@color/txt_black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDialogHeader"
+            android:layout_marginTop="10dp"
+            android:text="@string/are_you_sure_you_want_to_mark_the_order_1234_as_done"
+            android:textColor="@color/dialog_txt"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btn_login"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtDescription"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:text="@string/completed"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_cross"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/txtDialogHeader"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/img_cross"
+            android:padding="5dp"
+            android:src="@drawable/img_cross" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

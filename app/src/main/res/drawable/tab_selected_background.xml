@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solid background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <!-- Purple bottom line -->
+    <item android:gravity="bottom">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/purple_txt" />
+            <size android:height="5dp" />
+        </shape>
+    </item>
+</layer-list>

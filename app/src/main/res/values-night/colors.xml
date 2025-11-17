@@ -18,20 +18,20 @@
     <color name="red">#EF3826</color>
     <color name="lavender">#796FEF</color>
     <color name="light_red">#F7D1D4</color>
-    <color name="white_dialog">#FFFFFFFF</color>
-    <color name="purple_txt">#5D1769</color>
-    <color name="dialog_txt">#404040</color>
-    <color name="screens_bg">#F9F7FF</color>
-    <color name="view_line_color">#D2D2D2</color>
-    <color name="view_line_color_2">#D2D2D2</color>
-    <color name="txt_black">#202224</color>
-    <color name="txt_grey">#6A6A6A</color>
-    <color name="bg_drawer">#F9F7FF</color>
-    <color name="drawer_border_grey">#D2D2D2</color>
-    <color name="logout_border">#F7D1D4</color>
-    <color name="bg_filter">#FFFFFFFF</color>
-    <color name="border_filter">#D2D2D2</color>
-    <color name="new_grey">#404040</color>
+    <color name="white_dialog">#202224</color>
+    <color name="purple_txt">#F9F7FF</color>
+    <color name="dialog_txt">#FFFFFF</color>
+    <color name="screens_bg">#202224</color>
+    <color name="view_line_color">#404040</color>
+    <color name="view_line_color_2">#F9F7FF</color>
+    <color name="txt_black">#FFFFFF</color>
+    <color name="txt_grey">#D2D2D2</color>
+    <color name="bg_drawer">#404040</color>
+    <color name="drawer_border_grey">#6A6A6A</color>
+    <color name="logout_border">#6A6A6A</color>
+    <color name="bg_filter">#6A6A6A</color>
+    <color name="border_filter">#404040</color>
+    <color name="new_grey">#6A6A6A</color>
 
 
 </resources>
